@@ -13,22 +13,20 @@ MetaData update
 Commit
 """
 #---------------------prerequisits and setup
-import pandas as pd
 import jaydebeapi
 import time
-import os
 import subprocess
 from configparser import ConfigParser
 
 upld_dt = str(input("Enter date of upload run using format DDMMYYYY: " ))
 
-from py_scripts.func_clients_upload     import clients_upload
-from py_scripts.func_accounts_upload    import accounts_upload
-from py_scripts.func_cards_upload       import cards_upload
+from venv.py_scripts.func_clients_upload import clients_upload
+from venv.py_scripts.func_accounts_upload import accounts_upload
+from venv.py_scripts.func_cards_upload import cards_upload
 
-from py_scripts.func_files_upload       import blck_list_upload
-from py_scripts.func_files_upload       import trans_upload
-from py_scripts.func_files_upload       import term_upload
+from venv.py_scripts.func_files_upload import blck_list_upload
+from venv.py_scripts.func_files_upload import trans_upload
+from venv.py_scripts.func_files_upload import term_upload
 
 def file_archieving(working_dir, working_file):
     #for Linux
