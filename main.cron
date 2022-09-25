@@ -1,2 +1,2 @@
 #!/bin/bash
-./main.py
+30 3 * * * /main.py
